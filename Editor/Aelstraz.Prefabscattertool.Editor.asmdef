@@ -1,0 +1,18 @@
+{
+    "name": "Aelstraz.PrefabScatterTool.Editor",
+    "rootNamespace": "PrefabScatterTool",
+    "references": [
+        "Jakegwizdak.Prefabscattertool"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
