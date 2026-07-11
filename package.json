@@ -2,8 +2,7 @@
   "name": "com.aelstraz.prefabscattertool",
   "displayName": "Prefab Scatter Tool",
   "version": "0.1.0",
-  "unity": "6000.3",
-  "unityRelease": "11f1",
+  "unity": "2021.2",
   "description": "Paint/scatter prefabs across the surface of a collider with a wide variety of options/randomizations",
   "author": {
     "name": "Aelstraz"
