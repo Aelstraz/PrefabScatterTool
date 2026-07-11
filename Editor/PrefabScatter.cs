@@ -38,6 +38,11 @@ public class PrefabScatter : ScriptableObject
     /// </summary>
     public void CheckUserInput()
     {
+        if(Selection.activeGameObject == null)
+        {
+            return;
+        }
+        
         //set the layer of the selected object to our configured layer
         int objectLayer = Selection.activeGameObject.layer;
         Selection.activeGameObject.layer = GetLayerMask();
@@ -92,7 +97,10 @@ public class PrefabScatter : ScriptableObject
         if (info.undoName == UNDO_ADD_NAME || info.undoName == UNDO_DELETE_NAME)
         {
             ClearOverlapDictionary();
-            AddChildOverlapPositions(Selection.activeGameObject.transform);
+            if (Selection.activeGameObject != null)
+            {
+                AddChildOverlapPositions(Selection.activeGameObject.transform);
+            }
         }
     }
 
@@ -101,10 +109,20 @@ public class PrefabScatter : ScriptableObject
     /// </summary>
     private void OnSelectionChangedEvent()
     {
+        if (Selection.activeGameObject == null)
+        {
+            ClearOverlapDictionary();
+        }
+
         SceneView sceneView = SceneView.lastActiveSceneView;
         if (sceneView != null && sceneView.TryGetOverlay("prefab-scatter-tool-overlay", out Overlay overlay))
         {
-            if (overlay.displayed)
+            if (Selection.activeGameObject == null)
+            {
+                overlay.displayed = false;
+                return;
+            }
+            else if (overlay.displayed)
             {
                 ClearOverlapDictionary();
                 AddChildOverlapPositions(Selection.activeGameObject.transform);
