@@ -6,10 +6,8 @@
   "unityRelease": "11f1",
   "description": "Paint/scatter prefabs across the surface of a collider with a wide variety of options/randomizations",
   "author": {
-    "name": "Aelstraz",
-    "url": "https://github.com/aelstraz"
+    "name": "Aelstraz"
   },
-  "changelogUrl": "https://github.com/aelstraz/prefabscattertool/changelog",
-  "documentationUrl": "https://github.com/aelstraz/prefabscattertool/readme",
-  "licensesUrl": "https://github.com/aelstraz/prefabscattertool/license"
+  "changelogUrl": "https://github.com/Aelstraz/PrefabScatterTool/blob/main/CHANGELOG.md",
+  "documentationUrl": "https://github.com/Aelstraz/PrefabScatterTool/blob/main/README.md"
 }
