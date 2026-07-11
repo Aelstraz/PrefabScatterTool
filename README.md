@@ -1,7 +1,7 @@
 # Prefab Scatter Tool (Unity)
 Paint/scatter prefabs across the surface of a collider with a wide variety of options/randomizations. Label tooltips contain more information for each option.
 
-![Description of the image](./example.png)
+![Example screenshot](./example.png)
 
 ## Installation
 ### Using Unity Package Manager
